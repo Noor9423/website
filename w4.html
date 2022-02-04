@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+body {
+    background-image: url(wave.png);
+    background-repeat: no-repeat;
+}
+form {display: block;}
+header { display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+}
+.logo {
+    display: block;
+    cursor: pointer;
+    margin-right: auto;
+}
+nav {display: block;}
+.navLinks { list-style: none;
+  padding: 2px;
+  margin-right: 5px;
+}
+.navLinks li { display: inline-block;
+	padding: 5px 20px;
+}
+.navLinks li a {
+	text-decoration: none; color: black;
+	transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover {color: aqua; }
+
+input[type=name], input[type=email], input[type=location],input[type=description] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #444;
+  box-sizing: border-box;
+}
+input[type=description]{ width: 100%;
+  padding: 10px 10px 60px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #444;
+  box-sizing: border-box;
+}
+
+button {
+	background-color: #258673;
+	color: whitesmoke;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 50px;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+button:hover {
+  background-color: #0ccc11;
+  opacity: 0.5;
+}
+/* Extra styles for the cancel button */
+.canbtn {
+  width: auto;
+  padding: 10px 10px;
+  background-color: #f44336;
+}
+.cl {
+    border-radius: 5px;
+}
+.container {
+    display: inline-block;
+    width: 80%;}
+
+.footer {
+  min-height: 50px;
+  font-size: small;
+  bottom: 0;
+  margin-top: auto;
+}
+
+</style>
+<form action="">
+    
+<header>	
+	<h1 class="logo">Wear View Academy</h1>
+    <nav>
+        <ul class="navLinks">
+            <li><a href="#">Home</a>
+            <li><a href="#">Program</a>
+            <li><a href="#">Staff</a>
+            <li><a href="#">Events</a>
+            <li><a href="#">Blog</a>
+            <li><a href="#">Contact us</a>
+        </ul>
+    </nav>
+</header>    
+<div id="buId" class="modal">
+    <form class="modal-content">
+
+	<div class="container">
+            <label for="username"><b>Full Name</b></label>
+            <input class="cl" type="name" placeholder="Noor Alaseel" name="username" required>
+
+            <label for="email"><b>Email</b></label>
+            <input class="cl" type="email" placeholder="example@email.com" name="email" required>
+
+            <label for="location"><b>Location of the fault</b></label>
+            <input class="cl" type="location" placeholder="Where the fault" name="location" required>
+
+            <label for="description"><b>Brief Description</b></label>
+            <input class="cl" type="description" placeholder="Description" name="description" required>
+
+
+            <button type="submit" onclick="check(this.form)" value="login">Send</button>
+        </div>
+        <div class="container">
+            <button type="cencel" onclick="document.getElementById('buId').style.display='none'" class="canbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+	function check(form){
+		if (form.username.value && form.email.value && form.location.value && form.description.value){
+			alert ("The report has been sent, Thank you!")
+		}
+		else {
+			alert ("Please fill in all the fields!")
+		}
+	}
+</script>
+
+<section class="footer"> 
+    <hr/>
+        <p>WH46+7J Sunderland, United Kingdom | Phone: +441915152000 | Email: example@wearview.ac.uk</p>
+        <p>Copyright © 2022 Noor</p>
+</section>
+</form>
+</body>
+</html>
