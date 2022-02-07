@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="w4.css">
+    <title></title>
+</head>
+<body>
+<header>    
+    <h1 class="logo">Academy Logo</h1>
+    <nav>
+        <ul class="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="search"></div><img src="search.png" alt="search botton" class="search" width="28px" height="25px"></div>
+</header>    
+<div id="buId" class="modal">
+    <form class="modal-content" name="myForm" id="mainForm">
+        <div class="container">
+
+            <label for="username"><b>Full Name</b></label>
+            <input class="cl" id="username" type="name" placeholder="Noor" name="username" required>
+
+            <label for="email"><b>Email</b></label>
+            <input class="cl" id="email" type="email" placeholder="example@email.com" name="email" required>
+
+            <label for="location"><b>Location of the fault</b></label>
+            <select name="location" class="cl" type="location" id="location" required>
+                <option value="">None</option>
+                <option value="Software">Hardware</option>
+                <option value="Hardware">Software</option>
+                <option value="Both">Software and Hardware</option>
+                <option value="Other">Other</option>
+              </select>
+
+            <label for="description"><b>Description</b></label>
+            <input class="cl" id="description" type="description" placeholder="Please write a brief explanation" name="description" required>
+
+            <button type="submit" onclick="check(this.form)" value="login">Send</button>
+        </div>
+        
+        <div class="container">
+            <button type="cencel" onclick="document.getElementById('buId').style.display='none'" class="canbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+<section class="footer"> 
+    <hr/>
+    <table>
+        <tr>
+            <th class="footerText"> <p>United Kingdom | Phone: +400000000000 | Email: example@wearview.ac.uk</p>
+                 <p>Copyright © 2022 Noor</p></th>
+            <th class="footerSocial"> <img src="facebook.png" alt="facebook icon" class="facebook">
+                 <img src="instagram.png" alt="instagram icon" class="instagram">
+                 <img src="twitter.png" alt="twitter icon" class="twitter">
+                 <img src="youtube.png" alt="youtube icon" class="youtube">
+                 <img src="snap.png" alt="snapchat icon" class="snap"></th>
+        </tr>
+    </table>
+
+
+    </div>
+    </div>
+</section>
+</form>
+</body>
+</html>
